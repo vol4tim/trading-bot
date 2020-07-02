@@ -34,7 +34,7 @@ async function main() {
 Total Liquidity $${numberFormat(data.uniswap.liquidity)} (${
     data.uniswap.liquidityChange > 0 ? "+" : ""
   }${data.uniswap.liquidityChange}%);
-Volume (24hrs): ${numberFormat(data.uniswap.volume)} XRT (${
+Volume (24hrs): $${numberFormat(data.uniswap.volume)} (${
     data.uniswap.volumeChange > 0 ? "+" : ""
   }${data.uniswap.volumeChange}%);
 
@@ -42,7 +42,7 @@ Volume (24hrs): ${numberFormat(data.uniswap.volume)} XRT (${
 1 XRT = ${data.stex.price} ETH;
 24h max price ${data.stex.max} ETH;
 24h min price ${data.stex.min} ETH;
-Volume (24hrs): ${numberFormat(data.stex.volume)} XRT;
+Volume (24hrs): $${numberFormat(data.stex.volume)};
 
 p.s.: participate in the development of Robonomics project! Check events in the main chat of the community: t.me/robonomics
 `;
